@@ -1,4 +1,9 @@
 /*
+Create on Sat Sep 20 2025 14:20
+@author: ntdai
+Update: Sun Sep 21 2025 16:05
+
+KIEU DU LIEU VA CACH KHAI BAO BIEN
 Khong co kieu du lieu: void
 Ky tu: char
 So nguyen:
