@@ -2,7 +2,7 @@
 Create on Sun Sep 21 2025 16:10
 @author: ntdai
 
-NHAP DU LIEU TU BAN PHIM
+#3 NHAP DU LIEU TU BAN PHIM
 Su dung thu vien stdio.h -> ham scanf()
 scanf("format_string", argument_address_list);
 	format_string:

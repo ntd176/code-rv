@@ -3,7 +3,7 @@ Create on Sat Sep 20 2025 14:20
 @author: ntdai
 Update: Sun Sep 21 2025 16:05
 
-XUAT DU LIEU RA MAN HINH
+#2 XUAT DU LIEU RA MAN HINH
 printf("format_string", argument_list);
 	format_string:
 		%d -> so nguyen
