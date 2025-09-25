@@ -17,7 +17,7 @@ print()
 print(2)
 print("Hello Tien Dai")
 
-print(2);print("Hello Tien Dai")
+print(2); print("Hello Tien Dai")
 
 print("Hello", "Tien", "Dai", "123")
 print("Hello", "Tien", "Dai", "123", sep=',')
