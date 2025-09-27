@@ -2,7 +2,7 @@
 Create on Fri Sep 26 2025 14:30
 @author: ntdai
 
-#6 TOAN TU DIEU KIEN
+#7 TOAN TU DIEU KIEN
 	bieu_thu_1 ? bieu_thuc_2 : bieu_thuc_3;
 		Neu bieu_thuc_1 DUNG, thi bieu_thuc_2 duoc tinh toan va tro thanh gia tri cua toan bo bieu thuc
 		va nguoc lai
@@ -12,6 +12,7 @@ Create on Fri Sep 26 2025 14:30
 */
 
 #include "stdio.h"
+
 int main(){
 	int a;
 	printf("Nhap vao a = ");

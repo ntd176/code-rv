@@ -14,6 +14,7 @@ b-- <-> b = b - 1 // gia tri cua b thay doi sau khi ket thuc cau lenh
 */
 
 #include "stdio.h"
+
 int main(){
 	int a = 5;
 	int b = 5;

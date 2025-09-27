@@ -8,6 +8,7 @@ Create on Fri Sep 26 2025 14:00
 */
 
 #include "stdio.h"
+
 int main(){
 	int a, b;
 	printf("Nhap vao a = ");
