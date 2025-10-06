@@ -24,7 +24,7 @@ Create on Sat Oct 04 2025 15:15
 		AC = sqrt(pow(xc-xa, 2) + pow(yc-ya, 2));
 		BC = sqrt(pow(xc-xb, 2) + pow(yc-yb, 2));
 		
-	-> Tao thanh tam giac: AB+BC>AC hoac AB+AC>BC hoac BC+AC>AB
+	-> Tao thanh tam giac: AB+BC>AC va AB+AC>BC va BC+AC>AB
 	
 	--> Tam giac can: AB==AC || BC==AB || AC==BC
 	
@@ -63,7 +63,7 @@ int main(){
 	printf("BC = %.2f\n", BC);
 	
 	// check tam giac
-	if(AB+AC>BC || AB+BC>AC || AC+BC>AB){
+	if(AB+AC>BC && AB+BC>AC && AC+BC>AB){
 		printf("ABC tao thanh tam giac\n");
 		
 		// kiem tra ABC can
