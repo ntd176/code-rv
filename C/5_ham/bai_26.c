@@ -18,7 +18,7 @@ int check_snt(int x){
 	if (x<2) {
 		return 0;
 	} else {
-		for (i=2; i<=x-1; i++){
+		for (i=2; i<x-1; i++){
 			if(x%i==0)
 				return 0;
 		}
