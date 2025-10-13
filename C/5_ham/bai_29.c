@@ -47,10 +47,43 @@ int ngayTrongNam(int ngay, int thang, int nam){
 	int tong = 0;
 	int i;
 	for(i=1; i<thang; i++){
-		tong = tong + soNgayTrongThang(i, nam);
+		tong = tong + soNgayTrongThang(i, nam); // cong ngay cua thang truoc do
 	}
-	tong = tong + ngay;
+	tong = tong + ngay; // cong ngay hien tai cua thang
 	return tong;
+}
+
+void ngayTruoc(int ngay, int thang, int nam){
+	if (ngay==1){
+		if (thang==1){
+			ngay = 31;
+			thang = 12;
+			nam--;
+		} else {
+			thang--;
+			ngay = soNgayTrongThang(thang, nam);
+		}
+	} else {
+		ngay--;
+	}
+	printf("\nngay truoc do: %d / %d / %d", ngay, thang, nam);
+}
+
+void ngaySau(int ngay, int thang, int nam){
+	int nct = soNgayTrongThang(thang, nam); // ngay cuoi thang
+	if (ngay==nct){
+		if (thang==12){
+			ngay = 1;
+			thang = 1;
+			nam++;
+		} else {
+			ngay = 1;
+			thang++;
+		}
+	} else {
+		ngay++;
+	}
+	printf("\nngay sau do: %d / %d / %d", ngay, thang, nam);
 }
 
 int main(){
@@ -64,4 +97,8 @@ int main(){
 	printf("(a) thang %d nam %d co %d ngay\n", thang, nam, soNgayTrongThang(thang, nam));
 	// cau b
 	printf("(b) ngay %d thang %d nam %d la ngay thu %d", ngay, thang, nam, ngayTrongNam(ngay, thang, nam));
+	// cau c
+	ngayTruoc(ngay, thang, nam);
+	// cau d
+	ngaySau(ngay, thang, nam);
 }
