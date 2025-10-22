@@ -18,7 +18,7 @@ int main(){
 	scanf("%d", &bk);
 	// chu vi
 	cv = 2*pi*bk; // C = 2*pi*r
-	dt = pi*pow(bk, 2); // S = 2*pi*(r^2)
+	dt = pi*pow(bk, 2); // S = pi*(r^2)
 	//-------------
 	printf("\nchu vi = %.2f", cv);
 	printf("\ndien tich = %.2f", dt);
