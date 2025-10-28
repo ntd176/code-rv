@@ -35,7 +35,7 @@ int main(){
 	}
 }
 /*
-#13 IN RA SO NGAY CUA THANG
+#12 IN RA SO NGAY CUA THANG
 Nhap 2 so nguyen thang, nam. Neu thang va nam nhap vao khong hop le in ra INVALID, nguoc lai in ra so ngay trong nam.
 Chu y thang 2 cua nam nhuan co 29 ngay.
 */
