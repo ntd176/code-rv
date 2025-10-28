@@ -8,7 +8,7 @@ in ra YES neu la chu thuong va nguoc lai
 	A: NO
 	a: YES
 	%: NO
-*//*
+*/
 #include "stdio.h"
 int main(){
 	char c;
@@ -21,15 +21,14 @@ int main(){
 		printf("\nNO");
 	}
 }
-*/
-/*
+/*------------------------
 #14 KIEM TRA CHU IN THUONG
 nhap vao ky tu c.
 in ra YES neu la chu hoa va nguoc lai
 	A: YES
 	a: NO
 	%: NO
-*//*
+*/
 #include "stdio.h"
 int main(){
 	char c;
@@ -42,7 +41,7 @@ int main(){
 		printf("\nNO");
 	}
 }
-*//*
+/*------------------
 #15 KIEM TRA CHU CAI
 nhap vao ky tu c.
 in ra YES neu la chu cai va nguoc lai
@@ -50,7 +49,7 @@ in ra YES neu la chu cai va nguoc lai
 	a: YES
 	1: NO
 	%: NO
-*//*
+*/
 #include "stdio.h"
 int main(){
 	char c;
@@ -63,8 +62,7 @@ int main(){
 		printf("\nNO");
 	}
 }
-*//*
-
+/*-----------------
 #16 KIEM TRA CHU SO
 nhap vao ky tu c.
 in ra YES neu la chu so va nguoc lai
@@ -72,7 +70,7 @@ in ra YES neu la chu so va nguoc lai
 	a: YES
 	1: NO
 	%: NO
-*//*
+*/
 #include "stdio.h"
 int main(){
 	char c;
@@ -84,8 +82,8 @@ int main(){
 	} else {
 		printf("\nNO");
 	}
-}*/
-/*
+}
+/*-------------------------------
 #17 CHUYEN KY TU HOA THANH THUONG
 nhap vao ky tu c.
 Neu ky tu nhap la chu hoa thi in ra chu thuong tuong ung, nguoc lai thi khong thay doi ky tu ban dau
