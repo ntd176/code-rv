@@ -41,7 +41,33 @@ void tachMangChanLe(int a[], int n1, int b[], int &n2, int c[], int &n3){
 		}
 	}
 }
-
+// tach mang so am, so duong
+void tachMangAmDuong(int a[], int n1, int b[], int &n2, int c[], int &n3){
+	n2 = 0; // so phan tu mang b (am)
+	n3 = 0; // so phan tu mang c (duong)
+	for(int i=0; i<n1; i++){
+		if (a[i]<0){ // so am
+			b[n2] = a[i];
+			n2++;
+		} else if (a[i]>=0){ // so duong
+			c[n3] = a[i];
+			n3++;
+		}
+	}
+}
+// tach nua dau, nua sau mang
+void tachMangNuaDauNuaSau(int a[], int n1, int b[], int &n2, int c[], int &n3){
+	n2 = n1/2; // so phan tu nua dau
+	n3 = n1-n2; // so phan tu nua sau
+	// sao chep nua dau
+	for(int i=0; i<n2; i++){
+		b[i] = a[i];
+	}
+	// sao chep nua sau
+	for(int i=0; i<n3; i++){
+		c[i] = a[i+n2];
+	}
+}
 int main(){
 	int a[100], b[100], c[200];
 	int n1, n2, n3;
@@ -52,11 +78,27 @@ int main(){
 	printf("\nmang a vua nhap: ");
 	xuatMang(a, n1);
 	
-	// call function
+	// call function chan le
 	tachMangChanLe(a, n1, b, n2, c, n3);
 	
 	printf("\nmang chan b: ");
 	xuatMang(b, n2);
 	printf("\nmang le c: ");
+	xuatMang(c, n3);
+	
+	// call function am duong
+	tachMangAmDuong(a, n1, b, n2, c, n3);
+	
+	printf("\nmang am b: ");
+	xuatMang(b, n2);
+	printf("\nmang duong c: ");
+	xuatMang(c, n3);
+	
+	// call function nua dau, nua sau
+	tachMangNuaDauNuaSau(a, n1, b, n2, c, n3);
+	
+	printf("\nmang dau b: ");
+	xuatMang(b, n2);
+	printf("\nmang sau c: ");
 	xuatMang(c, n3);
 }
