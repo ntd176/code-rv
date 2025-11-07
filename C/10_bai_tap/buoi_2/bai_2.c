@@ -6,6 +6,7 @@ Create on Fri Nov 7 2025 14:15
 */
 
 #include "stdio.h"
+#include "math.h"
 
 int main(){
 	int M, N;
