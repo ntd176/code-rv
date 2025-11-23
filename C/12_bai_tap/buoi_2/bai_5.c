@@ -1,11 +1,12 @@
 /*
-Create on Fri Nov 14 2025 22:25
+Create on Sun Nov 16 2025 22:25
 @author: ntdai
 
 # bai 5
 */
 
 #include "stdio.h"
+#include "stdlib.h"
 
 int main(){
 	long long a, b, s;
@@ -24,3 +25,20 @@ int main(){
 			printf("No");
 	}
 }
+
+/*
+	TH1:
+	a = 2, b = 1 -> d = 3
+	s = 3
+	--> "YES"
+	---------------------
+	TH2:
+	a = 2, b = 1 -> d = 3
+	s = 4
+	--> "NO" 
+	---------------------
+	TH3:
+	a = 0, b = 0 -> d = 0
+	s = 2
+	--> "YES" 
+*/
